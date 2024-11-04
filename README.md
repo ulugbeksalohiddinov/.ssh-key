@@ -1,6 +1,6 @@
 # .ssh-key
 
-     ssh-keygen
+     ssh-keygen -t rsa
 #
      cd .ssh
 #
