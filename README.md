@@ -9,5 +9,6 @@
      
      ssh-copy-id user@192.168.151.10
 
+**Keyin login ip bilan ssh orqali ulaniladi**
 
-**Copy id_rsa in gitlab server**
+     ssh user@192.168.151.10
