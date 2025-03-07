@@ -4,7 +4,7 @@
      
      ssh-keygen -t rsa
 
-     root@kubectl:~#cd .ssh
+     root@kubectl:~# cd .ssh
 
 **Yasalgan public-keyni(id_rsa.pub) qaysi serverga ssh access qilmoqchi bo'lsa usha serverga copy qilinadi va password so'raganda usha qaysi serverga ulanmoqchi bo'lsa usha server passworddi teriladi.**
      
