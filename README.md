@@ -1,6 +1,7 @@
 **ssh key orqali access qilish uchun qaysi serverdan ulanmoqchi bo'lsa usha serverda ssh-key generatsiya qilinadi. Keyin qilinga public keyni qaysi serverga ulanmoqchi bo'lsa usha serverga copy qiladi.**
 
 **.ssh-key ssh keyni genaratsiya qilish**
+     
      ssh-keygen -t rsa
 
      cd .ssh
