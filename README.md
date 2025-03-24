@@ -13,3 +13,7 @@
 **Keyin login ip bilan ssh orqali ulaniladi**
 
      ssh user@192.168.151.10
+
+**ssh accessni sourece serverdan delete qilish**
+
+     ssh-keygen -f '/root/.ssh/known_hosts' -R '192.168.151.10'
