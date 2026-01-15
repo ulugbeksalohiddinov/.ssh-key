@@ -31,7 +31,7 @@ Keyin serverga ulanamiz
 
    ssh myserver
 
-#Serverda ssh default portni o'zgartirish
+Serverda ssh default portni o'zgartirish
 
    sudo nano /etc/ssh/sshd_config
 
