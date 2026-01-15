@@ -1,41 +1,39 @@
 Ulanmoqchi bo'lgan serverga kiriladi, login parol bilan.
 ssh generatsiya qilinadi.
-
 -C Bu koment shu bilan generatsiya qilganda 
 misol: user@62paynet
-
 id_rsa.pub keyni orqaliga shu komentni qo'shadi. Bu qaysi serverligini bilish uchun
 
    ssh-keygen -C user@62paynet
 
 id_rsa  id_rsa.pub keylar paydo bo'ladi. id_rsa.pub ni authorized_keys ga tashaladi
 
-cat id_rsa.pub > authorized_keys
+   cat id_rsa.pub > authorized_keys
 
 Keyin id_rsa ni olib qaysi klient hostdan ulanmoqchi bo'lsa ushanga tashalash kerak.
 
 Klient hostga kirib qandaydur nom bilan misol: 62paynet-key.pem file yaratiladi va id_rsa unga tashaladi.
 Keyni bu keyni defaultga qo'shib qo'yish kerak
 
-sudo nano ~/.ssh/config
+   sudo nano ~/.ssh/config
 
-   Host myserver
-    HostName 172.24.11.25
-    User user
-    Port 22
-    IdentityFile /srv/sshkey/62paynet-linux.pem
+      Host myserver
+       HostName 172.24.11.25
+       User user
+       Port 22
+       IdentityFile /srv/sshkey/62paynet-linux.pem
 
 
-sudo chmod 400 /srv/sshkey/62paynet-linux.pem
-sudo chown user:user /srv/sshkey/62paynet-linux.pem
+   sudo chmod 400 /srv/sshkey/62paynet-linux.pem
+   sudo chown user:user /srv/sshkey/62paynet-linux.pem
 
-keyin serverga ulanamiz
+Keyin serverga ulanamiz
 
-ssh myserver
+   ssh myserver
 
-Serverda ssh default portni o'zgartirish
+#Serverda ssh default portni o'zgartirish
 
-sudo nano /etc/ssh/sshd_config
+   sudo nano /etc/ssh/sshd_config
 
 portni # dan chiqarish kerak
 
@@ -43,6 +41,6 @@ Port 46579
 
 save qilib 
 
-sudo systemctl daemon-reexec
-sudo systemctl restart ssh
-sudo systemctl status ssh
+   sudo systemctl daemon-reexec
+   sudo systemctl restart ssh
+   sudo systemctl status ssh
