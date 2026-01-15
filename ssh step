@@ -1,9 +1,12 @@
 Ulanmoqchi bo'lgan serverga kiriladi, login parol bilan.
 ssh generatsiya qilinadi.
--C Bu koment shu bilan generatsiya qilganda misol: user@62paynet
+
+-C Bu koment shu bilan generatsiya qilganda 
+misol: user@62paynet
+
 id_rsa.pub keyni orqaliga shu komentni qo'shadi. Bu qaysi serverligini bilish uchun
 
-ssh-keygen -C user@62paynet
+   ssh-keygen -C user@62paynet
 
 id_rsa  id_rsa.pub keylar paydo bo'ladi. id_rsa.pub ni authorized_keys ga tashaladi
 
